@@ -30,7 +30,7 @@ export class SupplyusercomponentComponent implements OnInit {
   isActive(item: any) {
     return this.selected === item;
   }
-  sidenavChanged(event: any) {
+  sidenavChanged() {
     // handle event
   }
 }

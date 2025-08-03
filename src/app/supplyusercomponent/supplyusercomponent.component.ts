@@ -1,23 +1,20 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-supplyusercomponent',
-  templateUrl: './supplyusercomponent.component.html',
-  styleUrls: ['./supplyusercomponent.component.css']
+  selector: "app-supplyusercomponent",
+  templateUrl: "./supplyusercomponent.component.html",
+  styleUrls: ["./supplyusercomponent.component.css"],
 })
 export class SupplyusercomponentComponent implements OnInit {
-
   selected: any;
   sypplychainone = true;
   sypplychaintwo = false;
 
-  constructor(){}
+  constructor() {}
 
-  ngOnInit(){
+  ngOnInit() {
     this.selected = 1;
   }
-  
 
   setactiveProject1(item: any) {
     this.sypplychainone = true;
@@ -32,5 +29,8 @@ export class SupplyusercomponentComponent implements OnInit {
 
   isActive(item: any) {
     return this.selected === item;
+  }
+  sidenavChanged(event: any) {
+    // handle event
   }
 }

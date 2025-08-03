@@ -438,4 +438,8 @@ export class VendormanagerComponent implements OnInit {
   rowDoubleClick(row: any): void {
     console.log("Row double clicked:", row);
   }
+
+  rowClick(row: any): void {
+    console.log("Row clicked:", row);
+  }
 }

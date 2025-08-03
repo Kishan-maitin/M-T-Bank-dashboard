@@ -1,20 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-humancapitalusecomponent',
-  templateUrl: './humancapitalusecomponent.component.html',
-  styleUrls: ['./humancapitalusecomponent.component.css']
+  selector: "app-humancapitalusecomponent",
+  templateUrl: "./humancapitalusecomponent.component.html",
+  styleUrls: ["./humancapitalusecomponent.component.css"],
 })
 export class HumancapitalusecomponentComponent implements OnInit {
-
   selected: any;
   hrOverview = true;
   hrHire: any;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
-      this.selected = 1;
+    this.selected = 1;
   }
 
   sethrOverview(item: any) {
@@ -23,16 +22,16 @@ export class HumancapitalusecomponentComponent implements OnInit {
     this.selected = item;
   }
 
-  sethrHire(item: any){
+  sethrHire(item: any) {
     this.hrOverview = false;
     this.hrHire = true;
     this.selected = item;
   }
 
-  
-
   isActive(item: any) {
     return this.selected === item;
   }
-
+  sidenavChanged() {
+    // handle event
+  }
 }
